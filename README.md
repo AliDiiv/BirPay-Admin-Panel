@@ -19,9 +19,9 @@ A modern, responsive admin dashboard for managing payments, users, support ticke
 
 ## 🖼️ Screenshots
 
-| Dashboard | Support Tickets | Live Chat |
-|----------|------------------|------------|
-| ![](1.png) | ![](2.png) | ![](3.png) |
+| Login page | Dashboard | Dashboard | Live Chat | Setting |
+|----------|------------------|------------|------------|------------|
+| ![](1.png) | ![](2.png) | ![](3.png) | ![](4.png) | ![](5.png) |
 
 > Add images in the `/screenshots/` folder with the exact names above.
 
