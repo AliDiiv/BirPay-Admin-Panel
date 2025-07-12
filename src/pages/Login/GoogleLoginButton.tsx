@@ -9,15 +9,30 @@ export default function GoogleLoginButton() {
   const toast = useToast()
   const navigate = useNavigate()
 
+  // Handle click on Google login button
   const handleClick = () => {
-    const user = { id: Date.now().toString(), name: 'گوگل کاربر', email: 'user@gmail.com' }
+    // Simulate a user object returned from Google login
+    const user = { id: Date.now().toString(), name: 'Google User', email: 'user@gmail.com' }
+    
+    // Call login method from context to update auth state
     login(user)
-    toast({ title: 'ورود با Google موفق بود', status: 'success', isClosable: true })
+    
+    // Show success toast notification
+    toast({ title: 'Google login successful', status: 'success', isClosable: true })
+    
+    // Navigate to dashboard after login
     navigate('/dashboard')
   }
 
   return (
-    <Button leftIcon={<FcGoogle />} variant="outline" width="full" colorScheme="teal" fontWeight="bold" onClick={handleClick}>
+    <Button
+      leftIcon={<FcGoogle />}
+      variant="outline"
+      width="full"
+      colorScheme="teal"
+      fontWeight="bold"
+      onClick={handleClick}
+    >
       ورود با Google
     </Button>
   )

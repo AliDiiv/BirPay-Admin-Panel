@@ -16,25 +16,25 @@ export default function Dashboard() {
 
     return (
         <Flex flex="1" overflow="hidden" direction="column" h="100vh" bg={bg}>
-            {/* Header ثابت بالا */}
+            {/* Header */}
             <Header onOpenSidebar={onOpen} />
 
             {/* Main content + sidebar */}
             <Flex flex="1" overflow="hidden" direction="row-reverse">
                 <Box flex="1" overflowY="auto" p={4}>
-                    {/* محتوای داشبورد */}
+                    {/* contents*/}
                     <Counter />
                     <DashboardContent />
                     <ChartSection />
                 </Box>
 
-                {/* سایدبار دسکتاپ */}
+                {/* sidebar */}
                 <Box display={{ base: 'none', md: 'block' }}>
                     <Sidebar />
                 </Box>
             </Flex>
 
-            {/* Drawer موبایل */}
+            {/* Drawer mobile*/}
             <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
                 <DrawerOverlay />
                 <DrawerContent bg={bgDrawer}>

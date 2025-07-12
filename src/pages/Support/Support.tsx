@@ -32,7 +32,7 @@ export default function Support() {
       <Header onOpenSidebar={onOpen} />
 
       <Flex flex="1" direction={{ base: 'column', md: 'row-reverse' }} overflow="hidden">
-        {/* محتوای اصلی */}
+        {/* Contents*/}
         <Flex flex="3" direction="column" p={4} gap={4} overflow="hidden">
           <Text fontSize="xl" fontWeight="bold">تیکت‌های پشتیبانی</Text>
 
@@ -57,13 +57,13 @@ export default function Support() {
           </Flex>
         </Flex>
 
-        {/* سایدبار دسکتاپ */}
+        {/* Sidebar*/}
         <Box display={{ base: 'none', md: 'block' }}>
           <Sidebar />
         </Box>
       </Flex>
 
-      {/* Drawer موبایل */}
+      {/* Drawer mobile*/}
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent bg={bgDrawer}>
@@ -82,7 +82,7 @@ export default function Support() {
       </HStack>
       <Text fontSize="xs" mt={2} align="center">علی محمد جعفری </Text>
       <Text fontSize="xs" mt={2} align="center">v1.1 </Text>
-      {/* مودال ساخت تیکت */}
+      {/* modal ticket*/}
       <TicketModal
         isOpen={ticketModal.isOpen}
         onClose={ticketModal.onClose}

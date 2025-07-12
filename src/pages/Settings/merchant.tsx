@@ -14,7 +14,7 @@ export default function Merchant() {
 
   return (
     <Flex flex="1" overflow="hidden" direction="column" h="100vh" bg={bg}>
-      {/* Header ثابت بالا */}
+      {/* Header*/}
       <Header onOpenSidebar={onOpen} />
 
       {/* Main content + sidebar */}
@@ -23,13 +23,13 @@ export default function Merchant() {
           <ConfirmationPage/>
         </Box>
 
-        {/* سایدبار دسکتاپ */}
+        {/* sidebar*/}
         <Box display={{ base: 'none', md: 'block' }}>
           <Sidebar />
         </Box>
       </Flex>
 
-      {/* Drawer موبایل */}
+      {/* Drawer mobile*/}
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent bg={bgDrawer}>

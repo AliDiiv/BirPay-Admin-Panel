@@ -7,7 +7,7 @@ import Settings from '../pages/Settings/Settings'
 import UserLayout from '../layouts/UserLayout'
 import Support from '../pages/Support/Support'
 
-// صفحات تب‌های کاربری
+// User tab pages
 import Security from '../pages/Settings/security'
 import Notification from '../pages/Settings/notification'
 import Devices from '../pages/Settings/devices'
@@ -19,14 +19,14 @@ const AppRouter = () => {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
 
-        {/* روت‌های محافظت‌شده */}
+        {/* Protected routes*/}
         <Route element={<ProtectedRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/gateway" element={<Gateway />} />
           <Route path="/support" element={<Support />} />
           <Route path="/settings" element={<Settings />} />
 
-          {/* layout مشترک برای تب‌های کاربری */}
+          {/* Common layout for user tabs*/}
           <Route path="/settings/account" element={<UserLayout />} />
           <Route path="/settings/security" element={<Security />} />
           <Route path="/settings/notification" element={<Notification />} />

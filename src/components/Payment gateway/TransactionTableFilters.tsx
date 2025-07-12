@@ -28,7 +28,7 @@ export default function TransactionTableFilters() {
     }
   })
 
-  // watch برای جستجوی زنده و فیلترها
+  // watch for live search and filters
   const values = watch()
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function TransactionTableFilters() {
   }, [dispatch, values])
 
   const handleDownload = () => {
-    // دبود و دانلود CSV رو اینجا بزار
+    // Download and paste CSV here
     console.log('Download with filters:', values)
   }
 

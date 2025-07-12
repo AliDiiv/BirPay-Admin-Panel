@@ -23,7 +23,7 @@ const LoginPage = () => {
 
   return (
     <Flex height="100vh" direction={{ base: 'column', md: 'row-reverse' }}>
-      {/* سمت راست: تصویر */}
+      {/* right section*/}
       <Box
         flex="1"
         bg="#092030"
@@ -40,7 +40,7 @@ const LoginPage = () => {
         />
       </Box>
 
-      {/* سمت چپ: فرم + فوتر */}
+      {/* left section*/}
       <Box
         flex="1"
         bg={bgColor}

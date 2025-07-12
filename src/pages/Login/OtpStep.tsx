@@ -26,6 +26,7 @@ export default function OtpStep({
 }: Props) {
   const [otp, setOtp] = useState('')
 
+  // Handle input change, normalize characters and remove spaces
   const handleChange = (val: string) => {
     const fixed = PetoEn(val.replace(/\s/g, ''))
     setOtp(fixed)
@@ -34,11 +35,13 @@ export default function OtpStep({
   return (
     <Box position="relative" w="100%" dir="ltr">
       <VStack spacing={6}>
+        {/* Animated box that shakes horizontally on wrong OTP */}
         <MotionBox
           animate={wrongCodeTrigger ? { x: [0, -10, 10, -10, 10, 0] } : {}}
           transition={{ duration: 0.4 }}
         >
           <HStack justify="center">
+            {/* OTP input with 6 digits */}
             <PinInput
               otp
               value={otp}
@@ -52,6 +55,7 @@ export default function OtpStep({
               isDisabled={false}
               focusBorderColor="teal.500"
             >
+              {/* Render 6 individual input fields */}
               {Array.from({ length: 6 }).map((_, i) => (
                 <PinInputField
                   key={i}
@@ -68,6 +72,7 @@ export default function OtpStep({
           </HStack>
         </MotionBox>
 
+        {/* Submit button disabled until OTP length is 6 */}
         <Button
           colorScheme="teal"
           width="full"
@@ -77,7 +82,9 @@ export default function OtpStep({
           ورود
         </Button>
 
+        {/* Navigation buttons: Back and optionally Resend */}
         <HStack justify="space-between" width="full">
+          {/* Empty disabled button (can be removed) */}
           <Button
             variant="link"
             width="full"
@@ -85,7 +92,11 @@ export default function OtpStep({
             isDisabled
           >
           </Button>
+
+          {/* Back button */}
           <Button variant="link" onClick={onBack}>بازگشت</Button>
+
+          {/* Resend button shown conditionally */}
           {canResend && onResend && (
             <Button variant="link" colorScheme="blue" onClick={onResend}>
               ارسال مجدد کد
@@ -94,6 +105,7 @@ export default function OtpStep({
         </HStack>
       </VStack>
 
+      {/* Countdown timer or expired message */}
       <Text position="absolute" bottom="0" left="0" fontSize="xs" p={2} color="gray.500">
         {countdown > 0
           ? `زمان باقی‌مانده: ${Math.floor(countdown / 60)}:${('0' + (countdown % 60)).slice(-2)}`
