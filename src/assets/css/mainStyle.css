@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'IRANYekanX';
+  src: url('./assets/fonts/woff2/IRANYekanX-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IRANYekanX';
+  src: url('./assets/fonts/woff2/IRANYekanX-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  
+  --primary-color: #021726;
+  --primary-color-badge: #0BB794;
+  --primary-color-badge-bg: #00121E;
+  --secondary-color: #494c5a;
+  --white: #f2f2f3;
+  --black: #2a2c34;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+
+* {
+  font-family: 'IRANYekanX' !important;
+}
+
+
+body {
+  font-family: 'IRANYekanX';
+  background-color: var(--black);
+  background-opacity: 20%;
+  background-size: container;
+  background-position: center; 
+  direction: rtl;
+}
+
+
+body {
+  --sb-track-color: #424242;
+  --sb-thumb-color: #686868;
+  --sb-size: 14px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+.container {
+  max-width: 70rem;
+  padding: 0 18px;
+  margin: 0 auto;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+b {
+  font-weight: bold;
+}

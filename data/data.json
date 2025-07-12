@@ -1,0 +1,184 @@
+{
+  "otps": [
+    {
+      "id": "889b",
+      "dest": "09147037449",
+      "type": "phone",
+      "otp": "249033",
+      "timestamp": 1751708957419
+    },
+    {
+      "id": "56f2",
+      "dest": "09147037449",
+      "type": "phone",
+      "otp": "280427",
+      "timestamp": 1752111926462
+    }
+  ],
+  "users": [],
+  "dashboardStats": [
+    {
+      "label": "در انتظار تسویه",
+      "icon": "MdDateRange",
+      "value": "۵۰۰٬۰۰۰",
+      "footer": "مشاهده صف تسویه",
+      "id": "f5f5"
+    },
+    {
+      "label": "موجودی کیف‌پول‌ها",
+      "icon": "FaPiggyBank",
+      "value": "۲٬۰۰۰٬۰۰۰",
+      "footer": "کیف‌پول‌ها",
+      "id": "0073"
+    },
+    {
+      "label": "مبلغ تراکنش روز",
+      "icon": "FiRepeat",
+      "value": "۳۵۰٬۰۰۰",
+      "footer": "دیروز",
+      "id": "eaa1"
+    },
+    {
+      "label": "تعداد تراکنش روز",
+      "icon": "FiHash",
+      "value": "۸۲",
+      "footer": "دیروز",
+      "id": "b368"
+    }
+  ],
+  "chartData": [
+    {
+      "gateway": "woodshop",
+      "period": "روزانه",
+      "type": "count",
+      "day": "۱۸",
+      "value": 3,
+      "id": "b374"
+    },
+    {
+      "gateway": "woodshop",
+      "period": "روزانه",
+      "type": "count",
+      "day": "۱۹",
+      "value": 7,
+      "id": "3a67"
+    },
+    {
+      "gateway": "woodshop",
+      "period": "روزانه",
+      "type": "amount",
+      "day": "۱۸",
+      "value": 550000,
+      "id": "68ae"
+    },
+    {
+      "gateway": "test",
+      "period": "روزانه",
+      "type": "count",
+      "day": "۱۸",
+      "value": 2,
+      "id": "3501"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "TX1001",
+      "status": "موفق",
+      "date": "۱۴۰۴/۰۳/۰۱",
+      "amount": 500000,
+      "card": "1234-****-5678",
+      "mobile": "09120001122"
+    },
+    {
+      "id": "TX1002",
+      "status": "ناموفق",
+      "date": "۱۴۰۳/۱۲/۰۲",
+      "amount": 750000,
+      "card": "4321-****-8765",
+      "mobile": "09130002233"
+    },
+    {
+      "id": "TX1003",
+      "status": "موفق",
+      "date": "۱۴۰۳/۱۲/۰۳",
+      "amount": 750000,
+      "card": "4321-****-8765",
+      "mobile": "09147037449"
+    }
+  ],
+  "userProfile": [
+    {
+      "email": "ali20013.amj@gmail.com",
+      "mobile": "09147037449",
+      "name": "علی محمد جعفری",
+      "avatar": "/avatars/a1.png",
+      "documentUrl": "/docs/national-card.jpg",
+      "id": "cd1c"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "t1",
+      "title": "درخواست فعال‌سازی درگاه",
+      "desc": "لطفاً درگاه مستقیم را برای من فعال کنید.",
+      "createdAt": "2025-07-10T12:00:00Z"
+    },
+    {
+      "id": "a677",
+      "title": "سلام",
+      "desc": "سلام",
+      "createdAt": "2025-07-12T09:38:10.919Z",
+      "file": ""
+    }
+  ],
+  "messages": [
+    {
+      "id": "hhLPr-saJyRFaD_RK9nJr",
+      "ticketId": "",
+      "text": "سلام",
+      "from": "client",
+      "createdAt": "2025-07-12T08:19:33.297Z",
+      "file": ""
+    },
+    {
+      "id": "ROG6ObvQOwDprf0NYFMoN",
+      "ticketId": "t1",
+      "text": "سلام",
+      "from": "client",
+      "createdAt": "2025-07-12T09:37:59.591Z",
+      "file": ""
+    },
+    {
+      "id": "vYdTRhuZ0E-UALFMIMgsS",
+      "ticketId": "a677",
+      "text": "کفون",
+      "from": "client",
+      "createdAt": "2025-07-12T09:46:22.997Z",
+      "file": ""
+    },
+    {
+      "id": "DDxQqQ6_Xm_0COtwKGNEM",
+      "ticketId": "t1",
+      "text": "حالون یاخجی دی؟",
+      "from": "client",
+      "createdAt": "2025-07-12T10:14:02.295Z",
+      "file": ""
+    },
+    {
+      "id": "cted1PwpQ6CiAn_c4_dnP",
+      "ticketId": "a677",
+      "text": "نوار کیشی",
+      "from": "client",
+      "createdAt": "2025-07-12T10:14:10.656Z",
+      "file": ""
+    },
+    {
+      "id": "bDZ4GkLAD_ji0Lb9QTL-Y",
+      "ticketId": "a677",
+      "text": "یاخجسان",
+      "from": "client",
+      "createdAt": "2025-07-12T10:20:36.462Z",
+      "file": ""
+    }
+  ]
+}
