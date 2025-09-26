@@ -48,10 +48,19 @@ export default function AccountSecurity() {
           {/* تغییر رمز عبور */}
           <HStack justify="space-between" w="100%">
             <Text>کلمه عبور</Text>
-            <Button variant="link" onClick={handlePasswordChange}>
-              تغییر
-            </Button>
+            <HStack>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                style={{ border: "1px solid #ccc", padding: "4px 8px", borderRadius: "4px" }}
+              />
+              <Button variant="link" onClick={handlePasswordChange}>
+                تغییر
+              </Button>
+            </HStack>
           </HStack>
+
 
           {/* تغییر تلفن همراه */}
           <HStack justify="space-between" w="100%">
